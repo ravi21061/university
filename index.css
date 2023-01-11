@@ -1,0 +1,465 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+/*Header code start*/
+.header{
+	width: 100%;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 70px;
+}
+.header h3{
+	color: #33ff33;
+}
+.header h3::before{
+	content: " The ";
+	color: #000000;
+}
+.header h3::after{
+	content: " Finder";
+	color: #000000;
+}
+.header .btn{
+	padding: 12px 24px;
+	background-color: green;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+}
+/*Media query code start*/
+@media screen and (max-width:450px){
+.header{
+		padding: 0 40px;
+	}
+.header h3{
+	color: #33ff33;
+	font-size: 15px;
+}
+	.header .btn{
+	padding: 10px 20px;
+	background-color: green;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+}
+}
+/*Media query code end*/
+/*Header code end*/
+/*Form section with bg image code start*/
+
+.main{
+	width: 100%;
+	height: 550px;
+/*	border: 2px solid green;*/
+	background-image: url('Images/boy2.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.form-div{
+	width: 300px;
+	height: 400px;
+	border: none;
+	border-radius: 10px;
+	float: right;
+	margin: 70px 90px;
+	padding: 35px;
+	background-color: rgba(60, 179, 113,0.5);
+}
+.form-div h3{
+	margin-bottom: 5px;
+	color: #fff;
+}
+.form-div p{
+	margin-bottom: 10px;
+	color: #fff;
+}
+.form-div p a{
+	color: #fff;
+}
+.form-div input{
+	width: 100%;
+	padding: 6px 8px;
+	border-radius: 5px;
+	border: none;
+	margin: 6px 0;
+	outline: none;
+}
+.regist{			
+	margin-top: 5px;
+	padding: 6px 15px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.container-login{
+	font-size: 12px;
+	margin-top: 8px;
+}
+/*Media query code start*/
+@media screen and (max-width:500px){
+	.main{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+	}
+	.form-div{
+		float: none;
+		margin: 0px 0px;
+	}
+
+}
+/*Media query code end*/
+/*Form section code with bg image end*/
+
+/*Third section code started*/
+.container{
+	width: 100%;
+	height: 400px;
+/*	border: 2px solid blue;*/
+	display: flex;
+}
+.sub-count1{
+	width: 60%;
+	height: 400px;
+/*	border: 2px solid green;*/
+	padding: 60px;
+}
+.sub-count1 #campus{
+	color: #66ff66;
+}
+.sub-count1 p{
+	margin-top: 20px;
+}
+.sub-count2{
+	width: 40%;
+	height: 400px;
+	padding: 40px;
+}
+.sub-count2 img{
+	width: 100%;
+	height: 100%;
+}
+/*Meida query code start*/
+@media screen and (max-width:780px){
+	.container{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.sub-count1{
+		width: 100%;
+		height: auto;
+	}
+	.sub-count2{
+		width: 100%;
+		height: auto;
+		padding: 25px;
+	}
+/*Media query code end*/
+}
+/*Third section code end*/
+/*Three box section code started*/
+
+.big-box{
+	width: 100%;
+	height: 400px;
+/*	border: 1px solid red;*/
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.sub-box{
+	width: 300px;
+	height: 350px;
+	border: 1px solid #999999;
+	box-shadow: 0 3px 10px rgb(0 0 0 /0.5);
+	padding: 30px;
+	margin: 0 10px;
+	border-radius: 10px;
+}
+.sub-box1{
+	width: 200px;
+	height: auto;
+/*	border: 1px solid blue;*/
+	display: flex;
+}
+.sub-box p{
+	margin-top: 10px;
+	color: #737373;
+}
+.sub-box h3{
+	color:#66ff66 ;
+	margin-left: 10px;
+}
+.sub-box h3 i{
+	margin-right: 10px;
+	color: blue;
+}
+/*Media query code start*/
+
+@media screen and (max-width: 970px){
+	.big-box{
+	width: 100%;
+	height: auto;
+}
+.sub-box{
+	margin: 20px 10px;
+}
+}
+/*Media query code end*/
+/*Three box section code end*/
+/*Two section code start*/
+.contain{
+	width: 100%;
+	height: 300px;
+/*	border: 2px solid red;*/
+	display: flex;
+}
+.sub-contain{
+	width: 50%;
+	height: 300px;
+/*	border: 2px solid #66ff66;*/
+/*	padding: 60px 100px;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sub-contain img{
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+}
+.sub-contain h3{
+	color: #33cc33;
+	margin-bottom: 10px;
+}
+.sub-contain h4, p{
+	color: #737373;
+}
+.sub-contain .register{
+	padding: 8px 20px;
+	background-color:#33cc33;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.sub-contain .sub-item{
+	width: 340px;
+	height: auto;
+/*	border: 1px solid red;*/
+	padding: 20px;
+}
+/*Media query code start*/
+@media screen and (max-width:740px){
+.contain{
+	display: block;
+	height: auto;
+ }
+ .sub-contain{
+ 	width: 100%;
+ 	height: auto;
+ 	padding: 0px;
+ }
+}
+/*Media query code end*/
+/*Two section code end*/
+/*News and admission section code start*/
+.main-div{
+	width: 100%;
+/*	height: 400px;*/
+/*	border: 1px solid violet;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main-div .sub-div{
+	width: 520px;
+/*	height: 300px;*/
+	height: auto;
+	border: 1px solid #737373;
+/*	padding: 40px;*/
+	margin: 30px 10px;
+	box-shadow: 0 3px 10px rgb(0 0 0 /0.5);
+}
+.sub-div h4{
+	margin-bottom: 20px;
+	padding: 15px;
+	color: #33cc33;
+}
+.sub-div p{
+	margin: 0px 0;
+	padding: 10px;
+}
+/*Media query code star*/
+@media screen and (max-width:700px){
+.main-div{
+	display: block;
+	padding:20px ;
+}
+.main-div .sub-div{
+	width: 100%;
+	height: auto;
+	margin: 20px 0;
+}
+}
+/*Media query code end*/
+/*News and admission section code end*/
+/*Testimonial code start*/
+.head-div{
+	width: 100%;
+	height: 200px;
+/*	border: 1px solid pink;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+/*	text-align: center;*/
+}
+.head-div h2{
+	color: #33cc33;
+	margin: 15px 0;
+}
+.head-div .img-div{
+	width: 100px;
+	height: 100px;
+/*	border: 1px solid red;*/
+	border: none;
+	border-radius: 50%;
+}
+.imagepara-div{
+	width: 650px;
+	height: 200px;
+/*	border: 2px solid blue;*/
+	display: flex;
+	align-items: center;
+}
+.imagepara-div .img-div img{
+	width: 100%;
+	height: 100%;
+}
+.para-div{
+	width: 400px;
+/*	border: 1px solid pink;*/
+	margin-left: 20px;
+}
+.para-div h4{
+	margin-bottom: 10px;
+	color: #737373;
+}
+/*Media query code start*/
+@media screen and (max-width: 700px){
+	.head-div{
+		width: 100%;
+		height: auto;
+	}
+	.imagepara-div{
+		width: 100%;
+		height: auto;
+		margin: 20px 0;
+	}
+}
+@media screen and (max-width:400px){
+	.para-div{
+		width: 300px;
+		height: auto;
+
+	}
+}
+/*Media query code end*/
+/*Testimonial code end*/
+/*Admission for college section code start*/
+.box-div{
+	width: 100%;
+	height: 80px;
+/*	border: 1px solid yellow;*/
+	background-color: #33cc33;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.box-div h3{
+	color: #fff;
+}
+.box-div .rg-btn{
+	padding: 8px 25px;
+	color:#737373 ;
+	background-color: #fff;
+	border: 1px solid #737373;
+	border-radius: 8px;
+	cursor: pointer;
+}
+/*Media query code start*/
+@media screen and (max-width:540px){
+	.box-div h3{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width:450px){
+	.box-div{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.box-div .rg-btn{
+		padding: 5px 15px;
+	}
+}
+/*Media query code start*/
+/*Admission for college section code end*/
+/*Footer section start*/
+.main-footer{
+	width: 100%;
+	height: 180px;
+/*	border: 1px solid black;*/
+	background-color: #eff0f5;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 30px;
+}
+.sub-footer{
+	width: 350px;
+	height: 120px;
+/*	border: 1px solid red;*/
+	margin: 0 15px;
+}
+.sub-footer .campus::before{
+	content: " The ";
+}
+.sub-footer .campus::after{
+	content: " Finder";
+}
+.sub-footer h3{
+	color: #33cc33;
+}
+.sub-footer p{
+	margin-top: 10px;
+}
+.sub-footer p i{
+	font-size: 16px;
+	color: #1447cc;
+	margin: 0 5px;
+}
+/*Media query code start*/
+@media screen and (max-width: 900px){
+	.main-footer{
+		height: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: auto;
+	}
+	.sub-footer{
+		margin: 10px 0;
+	}
+}
+/*Media query code end*/
+/*Footer section end*/
